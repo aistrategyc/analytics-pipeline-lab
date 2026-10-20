@@ -1,0 +1,24 @@
+{
+  "source": "google_ads",
+  "window_start": "2026-10-17T12:00:00Z",
+  "window_end": "2026-10-20T12:00:00Z",
+  "complete": true,
+  "records": [
+    {
+      "record_id": "ad-1",
+      "updated_at": "2026-10-20T11:00:00Z",
+      "day": "2026-10-19",
+      "campaign_id": "autumn-demo",
+      "amount_minor": 5000,
+      "currency": "PLN"
+    },
+    {
+      "record_id": "ad-2",
+      "updated_at": "2026-10-20T11:00:00Z",
+      "day": "2026-10-19",
+      "campaign_id": "autumn-demo",
+      "amount_minor": 3000,
+      "currency": "PLN"
+    }
+  ]
+}

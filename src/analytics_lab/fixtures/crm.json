@@ -1,0 +1,32 @@
+{
+  "source": "crm",
+  "window_start": "2026-10-17T12:00:00Z",
+  "window_end": "2026-10-20T12:00:00Z",
+  "complete": true,
+  "records": [
+    {
+      "record_id": "order-1",
+      "updated_at": "2026-10-20T11:00:00Z",
+      "day": "2026-10-19",
+      "campaign_id": "autumn-demo",
+      "amount_minor": 10000,
+      "currency": "PLN"
+    },
+    {
+      "record_id": "order-2",
+      "updated_at": "2026-10-20T11:00:00Z",
+      "day": "2026-10-19",
+      "campaign_id": "autumn-demo",
+      "amount_minor": 20000,
+      "currency": "PLN"
+    },
+    {
+      "record_id": "order-3",
+      "updated_at": "2026-10-20T11:00:00Z",
+      "day": "2026-10-19",
+      "campaign_id": "autumn-demo",
+      "amount_minor": 15000,
+      "currency": "PLN"
+    }
+  ]
+}

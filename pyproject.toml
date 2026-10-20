@@ -1,0 +1,33 @@
+[project]
+name = "analytics-pipeline-lab"
+version = "0.1.0"
+description = "Incremental ads and CRM analytics in PostgreSQL: source revisions, late data, watermarks and reconciled reporting."
+requires-python = ">=3.11"
+license = "MIT"
+authors = [{name = "Kyrylo Prolieiev"}]
+dependencies = ['psycopg[binary]>=3.2', 'pydantic>=2.10']
+
+[project.scripts]
+lab = "analytics_lab.cli:main"
+
+[dependency-groups]
+dev = ["pytest>=8.3", "pytest-cov>=6", "ruff>=0.11"]
+
+[build-system]
+requires = ["hatchling>=1.27"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/analytics_lab"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra --strict-markers"
+filterwarnings = ["error"]
+
+[tool.ruff]
+target-version = "py311"
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E4", "E7", "E9", "F", "I", "B", "UP"]
